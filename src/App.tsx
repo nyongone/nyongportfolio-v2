@@ -340,6 +340,7 @@ const Section2 = {
         }
       `,
       SubContent: styled.span`
+        line-height: 1.5rem;
         font-size: 1rem;
         font-weight: 400;
         color: #ccc;
