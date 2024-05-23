@@ -388,9 +388,8 @@ const Section3 = {
       flex-direction: column;
       justify-content: flex-start;
       align-items: flex-start;
-      width: auto;
+      width: 100%;
       height: auto;
-      gap: 32px;
     `,
     Project: {
       Container: styled.div`
@@ -411,7 +410,7 @@ const Section3 = {
           flex-direction: column;
           justify-content: flex-start;
           align-items: flex-start;
-          padding-bottom: 48px;
+          padding: 48px 0;
           gap: 48px;
           grid-column: 1 / 2;
         `,

@@ -28,17 +28,18 @@ const Styled = {
     gap: 16px;
     width: 100%;
     height: 100%;
-    font-size: 2rem;
-    font-weight: 800;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 8px;
     cursor: pointer;
+    ${({ toggle }) => toggle && `background: #988888; color: white;`}
+    transition: .1s background ease-in, .1s color ease-in;
     &:before {
       content: "▶";
-      font-size: inherit;
+      font-size: 1rem;
       transform: rotate(0deg);
       ${({ toggle }) => toggle && "transform: rotate(90deg);"}
-    }
-    @media screen and (max-width: 767px) {
-      font-size: 1.5rem;
     }
   `,
 };
