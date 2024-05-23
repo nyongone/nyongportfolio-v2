@@ -109,7 +109,7 @@ const App = () => {
           </Section2.Content.Paragraphs>
           <Section2.Content.Images>
             <img src={AboutmeImage1} />
-            <img src={AboutmeImage2} />
+            <img src={AboutmeImage2} style={{ objectPosition: "0 -40px" }} />
           </Section2.Content.Images>
         </Section2.Content.Container>
       </Section2.Container>
@@ -311,8 +311,9 @@ const Section2 = {
       margin-top: -140px;
       @media screen and (max-width: 767px) {
         flex-direction: row;
-        gap: 48px;
         flex-wrap: wrap;
+        gap: 48px;
+        width: 100%;
         margin-top: 0;
       }
       & > img {
@@ -324,7 +325,6 @@ const Section2 = {
         @media screen and (max-width: 767px) {
           width: 100%;
           height: 160px;
-          object-position: 50%;
         }
       }
     `,
