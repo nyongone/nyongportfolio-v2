@@ -29,6 +29,7 @@ const Styled = {
     width: 100%;
     height: 100%;
     padding: 15px;
+    line-height: 1.5rem;
     font-size: 1.2rem;
     font-weight: 600;
     border-radius: 8px;
