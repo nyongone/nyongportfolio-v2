@@ -1,0 +1,52 @@
+export const projectList = [
+  {
+    id: 1,
+    title: "문화복지카드 사용처 검색 서비스 (Front-end)",
+    term: "2023. 03 ~ 진행중",
+    tech: "Typescript, React, Styled Components, Recoil, Next.js",
+    summary:
+      "전라남도에서 시행하는 “전남청년 문화복지카드 지원사업” 에서, 문화복지카드를 사용할 수 있는 가맹점 정보 제공의 부실로 해당 서비스를 개발하게 되었습니다. 이 서비스를 통하여 전남 지역에서 문화복지카드를 사용할 수 있는 가맹점들을 지도 및 키워드 검색을 통해 쉽게 검색할 수 있게 되었습니다.",
+    contributes: [
+      "Figma를 통해 서비스의 전반적인 프론트엔드 레이아웃 및 UI/UX 설계 담당",
+      "React 프레임워크를 이용한 서비스 개발",
+      "네이버 지도 API를 통해 지도에 사용처를 마커로 표시 → 사용자에게 더욱 직관적인 정보 제공",
+      "Next.js로 프레임워크 마이그레이션 → Server-side Rendering 및 검색 엔진 최적화 진행",
+      "에러 및 퍼포먼스 모니터링을 위한 Sentry 도입 → 서비스 이용 시 발생하는 오류 등을 더욱 신속하게 확인",
+      "이전 버전의 서비스에서의 레이아웃 개편 → 데스크톱/모바일 버전의 반응형 레이아웃 도입",
+    ],
+    website: "https://ywc.wavers.kr",
+    github: "https://github.com/team-wavers/ywc-fe-v2",
+    link: undefined,
+  },
+  {
+    id: 2,
+    title: "MBTI-Lens (Front-end)",
+    term: "2023. 06 ~ 2023. 09",
+    tech: "Typescript, Next.js, Styled Components, Recoil",
+    summary: "자신의 MBTI를 남들과 공유하고 평가받을 수 있는 서비스입니다.",
+    contributes: [
+      "서비스의 레이아웃 및 컴포넌트 디자인 설계 일부 기여",
+      "Next.js 프레임워크를 이용한 서비스 개발 기여 (MBTI 입력창, 메인 화면, 카카오 로그인 연동)",
+    ],
+    website: undefined,
+    github: "https://github.com/team-wavers/mbti-lens",
+    link: undefined,
+  },
+  {
+    id: 3,
+    title: "코리아 클래시 기업 소개 페이지 외주 개발",
+    term: "2023. 12 ~ 2024. 01",
+    tech: "Javascript, React, Styled Components, Express",
+    summary: "코리아 클래시 기업의 기업 소개 페이지를 개발하였습니다.",
+    contributes: [
+      "웹사이트 UI/UX 및 레이아웃 설계",
+      "React 프레임워크를 이용하여 페이지 및 컴포넌트 설계 및 개발",
+      "CSS 및 Vanilla JS로 각종 컴포넌트 애니메이션, 이미지 캐러셀 등 개발",
+      "서드파티 SMTP 라이브러리를 이용한 이메일로 문의하기 기능 개발",
+      "정적 페이지 라우팅을 위한 Express 서버 개발",
+    ],
+    website: "http://korea-classy.com ",
+    github: undefined,
+    link: undefined,
+  },
+];
