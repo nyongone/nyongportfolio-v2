@@ -34,7 +34,8 @@ const Styled = {
     &:before {
       content: "▶";
       font-size: inherit;
-      ${({ toggle }) => toggle && `content: "▼";`}
+      transform: rotate(0deg);
+      ${({ toggle }) => toggle && "transform: rotate(90deg);"}
     }
     @media screen and (max-width: 767px) {
       font-size: 1.5rem;
