@@ -117,7 +117,7 @@ const App = () => {
       <Section3.Container ref={(el) => el && (sectionRef.current[2] = el)}>
         <Section3.Title>Projects</Section3.Title>
         <Section3.Subtitle>
-          제가 했던 프로젝트들을 보여드릴게요.
+          제가 참여했던 프로젝트들을 보여드릴게요.
         </Section3.Subtitle>
         <Section3.Projects.Container>
           {projectList.map((project) => (
