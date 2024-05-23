@@ -40,7 +40,11 @@ const App = () => {
           담백함을 좋아하는 <b>조용원</b> 입니다.
         </Section1.Subtitle>
         <Section1.Links.Container>
-          <a href="https://github.com/nyongone/">
+          <a
+            href="https://github.com/nyongone/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Section1.Links.Item>
               <GithubIcon />
             </Section1.Links.Item>
@@ -55,7 +59,11 @@ const App = () => {
               <BlogIcon />
             </Section1.Links.Item>
           </a>
-          <a href="https://dyslodev.notion.site/949160b53a394cff999bd82a1598a6b9?pvs=4">
+          <a
+            href="https://dyslodev.notion.site/949160b53a394cff999bd82a1598a6b9?pvs=4"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Section1.Links.Item>
               <NotionIcon />
             </Section1.Links.Item>
@@ -156,7 +164,13 @@ const App = () => {
                         웹사이트
                       </Section3.Projects.Project.Content.Paragraph.Label>
                       <Section3.Projects.Project.Content.Paragraph.Content>
-                        <a href={project.website}>{project.website}</a>
+                        <a
+                          href={project.website}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          {project.website}
+                        </a>
                       </Section3.Projects.Project.Content.Paragraph.Content>
                     </Section3.Projects.Project.Content.Paragraph.Container>
                   )}
@@ -166,7 +180,13 @@ const App = () => {
                         GitHub 레포지토리
                       </Section3.Projects.Project.Content.Paragraph.Label>
                       <Section3.Projects.Project.Content.Paragraph.Content>
-                        <a href={project.github}>{project.github}</a>
+                        <a
+                          href={project.github}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          {project.github}
+                        </a>
                       </Section3.Projects.Project.Content.Paragraph.Content>
                     </Section3.Projects.Project.Content.Paragraph.Container>
                   )}
@@ -176,7 +196,9 @@ const App = () => {
                         관련 링크
                       </Section3.Projects.Project.Content.Paragraph.Label>
                       <Section3.Projects.Project.Content.Paragraph.Content>
-                        <a href={project.link}>{project.link}</a>
+                        <a href={project.link} target="_blank" rel="noreferrer">
+                          {project.link}
+                        </a>
                       </Section3.Projects.Project.Content.Paragraph.Content>
                     </Section3.Projects.Project.Content.Paragraph.Container>
                   )}
