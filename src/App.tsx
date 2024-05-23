@@ -270,6 +270,9 @@ const Section2 = {
     width: 100%;
     height: 100%;
     padding: 40px 0;
+    @media screen and (max-width: 767px) {
+      padding-bottom: 0;
+    }
   `,
   Title: styled.h1`
     font-size: 2rem;
@@ -308,7 +311,7 @@ const Section2 = {
       margin-top: -140px;
       @media screen and (max-width: 767px) {
         flex-direction: row;
-        gap: 12px;
+        gap: 48px;
         flex-wrap: wrap;
         margin-top: 0;
       }
@@ -319,8 +322,9 @@ const Section2 = {
         border-radius: 12px;
         opacity: 0.5;
         @media screen and (max-width: 767px) {
-          width: 160px;
+          width: 100%;
           height: 160px;
+          object-position: 50%;
         }
       }
     `,
