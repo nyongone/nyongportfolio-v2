@@ -380,6 +380,7 @@ const Section3 = {
   Title: styled(Section2.Title)``,
   Subtitle: styled(Section2.Subtitle)`
     margin-bottom: 64px;
+    line-height: 2rem;
   `,
   Projects: {
     Container: styled.div`
