@@ -86,7 +86,7 @@ const App = () => {
                   병역사항
                 </Section2.Content.Paragraph.Label>
                 <Section2.Content.Paragraph.Content>
-                  4급 보충역 신입
+                  4급 사회복무요원 소집대상
                 </Section2.Content.Paragraph.Content>
               </Section2.Content.Paragraph.Container>
             </Section2.Content.Paragraphs>
