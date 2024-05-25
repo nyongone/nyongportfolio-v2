@@ -30,6 +30,7 @@
     "eslint-plugin-react-refresh": "^0.4.6",
     "globals": "^15.3.0",
     "prettier": "^3.2.5",
+    "react-helmet-async": "^2.0.5",
     "react-router-dom": "^6.23.1",
     "typescript": "^5.2.2",
     "typescript-eslint": "^7.10.0",

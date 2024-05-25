@@ -9,10 +9,17 @@ import { projectList } from "@/contents/projects";
 import Toggle from "./components/Toggle";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import { Helmet } from "react-helmet-async";
 
 const App = () => {
   return (
     <>
+      <Helmet>
+        <meta
+          name="google-site-verification"
+          content="3TUBPjEMeNMx2yKQuRik0HkztvAoHB91Ya4tKv0Br_0"
+        />
+      </Helmet>
       <Header />
       <Main>
         <Section1.Indicator id="home"></Section1.Indicator>
