@@ -40,11 +40,13 @@ const Components = {
     background: rgba(0, 0, 0, 0);
     transition:
       0.15s transform ease-in,
-      0.15s background ease-in;
+      0.15s background ease-in,
+      0.15s backdrop-filter ease-in;
     z-index: 999;
     @media screen and (min-width: 768px) {
       &:hover {
         background: rgba(0, 0, 0, 0.04);
+        backdrop-filter: blur(3px);
         transform: scale(1.02);
       }
     }
@@ -58,9 +60,10 @@ const Components = {
       margin: 0;
       padding: 20px 0;
       padding-top: 0;
-      background: #fffcfc;
+      background: rgba(0, 0, 0, 0.02);
       border-radius: 0;
       border-bottom: 1px solid #e2dddd;
+      backdrop-filter: blur(3px);
     }
   `,
   LogoImage: styled.img`
