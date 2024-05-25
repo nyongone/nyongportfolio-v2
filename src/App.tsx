@@ -45,17 +45,17 @@ const App = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <Section1.Links.Item>
+            <Section1.Links.Item alt="깃헙">
               <GithubIcon />
             </Section1.Links.Item>
           </a>
           <a href="mailto:auau3@kakao.com">
-            <Section1.Links.Item>
+            <Section1.Links.Item alt="이메일">
               <EmailIcon />
             </Section1.Links.Item>
           </a>
           <a href="https://nyong.world/">
-            <Section1.Links.Item>
+            <Section1.Links.Item alt="블로그">
               <BlogIcon />
             </Section1.Links.Item>
           </a>
@@ -64,7 +64,7 @@ const App = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <Section1.Links.Item>
+            <Section1.Links.Item alt="노션">
               <NotionIcon />
             </Section1.Links.Item>
           </a>
@@ -254,12 +254,35 @@ const Section1 = {
       height: auto;
       padding-top: 60px;
     `,
-    Item: styled.li`
+    Item: styled.li<{ alt: string }>`
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 12px;
       width: auto;
       height: auto;
       & > svg {
         width: 60px;
         height: 60px;
+      }
+      @media screen and (min-width: 768px) {
+        &:hover {
+          &:after {
+            position: absolute;
+            bottom: -28px;
+            display: block;
+            content: ${({ alt }) => alt && `"${alt}"`};
+            text-align: center;
+          }
+        }
+      }
+      @media screen and (max-width: 767px) {
+        &:after {
+          content: ${({ alt }) => alt && `"${alt}"`};
+          text-align: center;
+        }
       }
     `,
   },
@@ -271,7 +294,7 @@ const Section2 = {
     height: 100%;
     padding: 40px 0;
     @media screen and (max-width: 767px) {
-      padding-bottom: 0;
+      padding: 0;
     }
   `,
   Title: styled.h1`
