@@ -67,6 +67,9 @@ const App = () => {
                   순천대학교 컴퓨터공학과 4학년 재학중
                 </Section2.Content.Paragraph.Content>
                 <Section2.Content.Paragraph.SubContent>
+                  2학기 휴학예정
+                </Section2.Content.Paragraph.SubContent>
+                <Section2.Content.Paragraph.SubContent>
                   컴퓨터구조, 자료구조, 웹프로그래밍, 데이터베이스, 컴파일러 등
                   과목 수강 완료
                 </Section2.Content.Paragraph.SubContent>
