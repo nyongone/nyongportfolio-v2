@@ -20,7 +20,7 @@ const App = () => {
       window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
     hash === "#about" &&
       window.scrollTo({
-        top: sectionRef.current[1].offsetTop - 200,
+        top: sectionRef.current[1].offsetTop - 175,
         left: 0,
         behavior: "smooth",
       });
