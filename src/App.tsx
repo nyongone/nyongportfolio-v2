@@ -54,7 +54,7 @@ const App = () => {
               <EmailIcon />
             </Section1.Links.Item>
           </a>
-          <a href="https://nyong.world/">
+          <a href="https://velog.io/@dyslo/posts">
             <Section1.Links.Item alt="블로그">
               <BlogIcon />
             </Section1.Links.Item>
