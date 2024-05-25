@@ -227,7 +227,6 @@ const Section1 = {
     width: 0;
     height: 0;
     top: 0;
-    left: 0;
   `,
   Container: styled.section`
     position: relative;
@@ -297,10 +296,7 @@ const Section1 = {
 };
 
 const Section2 = {
-  Indicator: styled.div`
-    position: absolute;
-    width: 0;
-    height: 0;
+  Indicator: styled(Section1.Indicator)`
     top: -150px;
     @media screen and (max-width: 767px) {
       top: -200px;
