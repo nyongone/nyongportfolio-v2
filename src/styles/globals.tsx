@@ -20,6 +20,7 @@ const styles = css`
     background-color: #fffcfc;
     color: #5a5a5a;
     font-family: "SUITE", sans-serif;
+    scroll-behavior: smooth;
   }
 
   &:link,
