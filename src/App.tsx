@@ -121,7 +121,7 @@ const App = () => {
         </Section3.Subtitle>
         <Section3.Projects.Container>
           {projectList.map((project) => (
-            <Section3.Projects.Container key={project.id}>
+            <Section3.Projects.Project.Container key={project.id}>
               <Toggle title={project.title}>
                 <Section3.Projects.Project.Content.Container>
                   <Section3.Projects.Project.Content.Paragraph.Container>
@@ -204,7 +204,7 @@ const App = () => {
                   )}
                 </Section3.Projects.Project.Content.Container>
               </Toggle>
-            </Section3.Projects.Container>
+            </Section3.Projects.Project.Container>
           ))}
         </Section3.Projects.Container>
       </Section3.Container>
@@ -418,16 +418,14 @@ const Section3 = {
       flex-direction: column;
       justify-content: flex-start;
       align-items: flex-start;
+      gap: 12px;
       width: 100%;
       height: auto;
     `,
     Project: {
       Container: styled.div`
-        display: grid;
         width: 100%;
-        grid-template-columns: 2fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        justify-items: stretch;
+        height: auto;
       `,
       Title: styled.span`
         font-size: 2rem;
