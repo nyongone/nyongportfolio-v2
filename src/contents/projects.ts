@@ -16,7 +16,7 @@ export const projectList = [
     ],
     website: "https://ywc.wavers.kr",
     github: "https://github.com/team-wavers/ywc-fe-v2",
-    link: undefined,
+    link: "https://bit.ly/3VbVhOC",
   },
   {
     id: 2,
@@ -48,5 +48,20 @@ export const projectList = [
     website: "http://korea-classy.com ",
     github: undefined,
     link: undefined,
+  },
+  {
+    id: 4,
+    title: "개인 포트폴리오 사이트 개발",
+    term: "2024. 05. 23",
+    tech: "Typescript, React, Emotion, React Router Dom",
+    summary: "React를 통해 개인 포트폴리오 사이트를 개발했습니다.",
+    contributes: [
+      "웹사이트 UI/UX 및 컴포넌트 디자인",
+      "SPA 개발을 위한 싱글 페이지 컴포넌트 디자인",
+      "Hash Router를 통한 동적 Scroll Event 기능 개발",
+    ],
+    website: "https://pf.nyong.world",
+    github: "https://github.com/nyongone/nyongportfolio-v2",
+    link: "https://velog.io/@dyslo/React-Bun-간단한-포트폴리오-사이트-만들기",
   },
 ];
