@@ -70,8 +70,9 @@ const App = () => {
                   2학기 휴학예정
                 </Section2.Content.Paragraph.SubContent>
                 <Section2.Content.Paragraph.SubContent>
-                  컴퓨터구조, 자료구조, 웹프로그래밍, 데이터베이스, 컴파일러 등
-                  과목 수강 완료
+                  컴퓨터공학과를 다니며 컴퓨터구조 및 자료구조,
+                  데이터베이스응용, 웹 프로그래밍, 모바일 프로그래밍 등의 과목을
+                  이수하였습니다.
                 </Section2.Content.Paragraph.SubContent>
               </Section2.Content.Paragraph.Container>
               <Section2.Content.Paragraph.Container>
@@ -89,7 +90,8 @@ const App = () => {
                   병역사항
                 </Section2.Content.Paragraph.Label>
                 <Section2.Content.Paragraph.Content>
-                  4급 사회복무요원 소집대상
+                  4급 사회복무요원 소집대상, <b>산업기능요원</b> 혹은
+                  <b> 전문연구요원</b> 직무 희망하고 있습니다.
                 </Section2.Content.Paragraph.Content>
               </Section2.Content.Paragraph.Container>
             </Section2.Content.Paragraphs>
@@ -131,9 +133,9 @@ const App = () => {
                       <Section3.Projects.Project.Content.Paragraph.Label>
                         프로젝트 개요
                       </Section3.Projects.Project.Content.Paragraph.Label>
-                      <Section3.Projects.Project.Content.Paragraph.Content>
-                        {project.summary}
-                      </Section3.Projects.Project.Content.Paragraph.Content>
+                      <Section3.Projects.Project.Content.Paragraph.Content
+                        dangerouslySetInnerHTML={{ __html: project.summary }}
+                      ></Section3.Projects.Project.Content.Paragraph.Content>
                     </Section3.Projects.Project.Content.Paragraph.Container>
                     <Section3.Projects.Project.Content.Paragraph.Container>
                       <Section3.Projects.Project.Content.Paragraph.Label>
@@ -466,6 +468,7 @@ const Section3 = {
           `,
           Label: styled(Section2.Content.Paragraph.Label)``,
           Content: styled(Section2.Content.Paragraph.Content)`
+            line-height: 2.5rem;
             & > p {
               padding-left: 8px;
               margin-bottom: 8px;
