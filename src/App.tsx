@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import GithubIcon from "@/assets/icons/github-icon.svg?react";
 import EmailIcon from "@/assets/icons/email-icon.svg?react";
 import BlogIcon from "@/assets/icons/blog-icon.svg?react";
-import NotionIcon from "@/assets/icons/notion-icon.svg?react";
+// import NotionIcon from "@/assets/icons/notion-icon.svg?react";
 import AboutmeImage1 from "@/assets/images/aboutme-image-1.jpg";
 import AboutmeImage2 from "@/assets/images/aboutme-image-2.jpeg";
 import { projectList } from "@/contents/projects";
@@ -36,12 +36,12 @@ const App = () => {
                 <EmailIcon />
               </Section1.Links.Item>
             </a>
-            <a href="https://velog.io/@dyslo/posts">
+            <a href="https://nyong.world">
               <Section1.Links.Item alt="블로그">
                 <BlogIcon />
               </Section1.Links.Item>
             </a>
-            <a
+            {/* <a
               href="https://dyslodev.notion.site/949160b53a394cff999bd82a1598a6b9?pvs=4"
               target="_blank"
               rel="noreferrer"
@@ -49,7 +49,7 @@ const App = () => {
               <Section1.Links.Item alt="노션">
                 <NotionIcon />
               </Section1.Links.Item>
-            </a>
+            </a> */}
           </Section1.Links.Container>
         </Section1.Container>
         <Divider />
@@ -260,8 +260,9 @@ const Section1 = {
     Container: styled.ul`
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: flex-start;
       align-items: center;
+      gap: 36px;
       max-width: 360px;
       height: auto;
       padding-top: 60px;
